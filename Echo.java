@@ -3,10 +3,13 @@ import net.without_brains.echo.*;
 
 public class Echo {
   public static void main( String[] args ) throws Exception {
-    String message;
+    String message = null;
+
     if (args.length > 0) {
       message = args[0];
-    } else {
+    } 
+
+    if (message.equals("") || message == null) {
       message = "Hello from Java";
     }
 
