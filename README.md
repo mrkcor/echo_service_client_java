@@ -10,9 +10,9 @@ Clone the [EchoService](https://github.com/mkremer/echo_service) Git repository 
 
 Clone this Git repository
 
-Run ./build to compile all the Java code
+Run ./build to compile all the Java code (on Windows build.bat)
 
-Run ./run to run it (you may pass an argument to send as your message to the EchoService)
+Run ./run to run it (on WIndows run.bat, for both you may pass an argument to send as your message to the EchoService)
 
 License
 -------
