@@ -1,0 +1,1 @@
+javac -classpath .:./lib Echo.java lib/net/without_brains/echo/*.java lib/net/without_brains/echo_service/*.java
