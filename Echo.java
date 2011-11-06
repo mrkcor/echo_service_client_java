@@ -7,7 +7,7 @@ public class Echo {
     String message = null;
 
     if (args.length > 0) {
-      // If command line arguments were given then the first argument os ised
+      // If command line arguments were given then the first argument is used
       // to send to the EchoService
       message = args[0];
     } 
