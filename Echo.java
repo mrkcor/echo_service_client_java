@@ -23,6 +23,16 @@ public class Echo {
       EchoPortType client = new EchoService().getEchoPort();
 
       // Define request and response variables
+      //
+      // Because the same XML types are used for both the Echo and ReverseEcho 
+      // operation in the XML schema Java uses the same classes for the request 
+      // and response for both operations. In this example the request is set 
+      // once and is used for calling both Echo and ReverseEcho, and the same 
+      // response variable is used to capture the response for both calls.
+      // Most services that offer multiple operations will use different XML 
+      // types for different operations, so you will not always be able to reuse
+      // request and response variables between operations like done in this 
+      // example
       EchoMessageType request;
       EchoMessageType response;
 
