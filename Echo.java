@@ -12,7 +12,7 @@ public class Echo {
       message = args[0];
     } 
 
-    if (message.equals("") || message == null) {
+    if (message == null || message.equals("")) {
       // If no message was defined use "Hello from Java" as the default
       message = "Hello from Java";
     }
