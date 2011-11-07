@@ -49,6 +49,10 @@ public class Echo {
       System.out.println("EchoService responded to ReverseEcho: " + response.getMessage());
     } catch (javax.xml.ws.WebServiceException exception) {
       // In case of an error (SOAP fault or otherwise) output the error
+      // 
+      // java.xml.ws.WebServiceException is a generic exception that catches
+      // a lot of web service related faults, if you want you can catch more 
+      // specific exceptions in your code to handle specific faults
       System.out.println("An error occurred while attempting to interact with the EchoService: " + exception.getMessage());
     }
   }
